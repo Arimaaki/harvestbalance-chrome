@@ -209,12 +209,11 @@ $(function() {
       var mainTemplate = templates[0];
       var settingsTemplate = templates[1];
 
-      $("main .js-root-view, main .js-day-view-wrapper")
+      $("main")
       .before(
         $("<div class='balance'/>")
       );
-      $("main .wrapper")
-      .find('.balance')
+      $(".balance")
       .prepend(
         $("<div class='main-panel'/>").html(
           Mustache.render(mainTemplate,
